@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Leccion 3</title>
+    <meta name="description" content="Frontpage con Sass usando el patrón 7-1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body class="theme-default weather-app">
+    <header class="header navbar navbar-expand-lg navbar-light bg-light weather-app__header">
+      <div class="container">
+        <a class="navbar-brand weather-app__brand" href="index.html">WeatherApp</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMain">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="#features">Lugares</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">Acerca de</a></li>
+          </ul>
+          <a class="btn btn-primary weather-app__cta" href="detail.html">Ver detalle</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero weather-app__hero">
+        <div class="inner">
+          <h1>Clima</h1>
+          <p>Intento de Clima</p>
+          <div class="actions">
+            <a class="btn" href="#demo">Ver mapa</a>
+            <a class="btn-outline" href="#docs">Informacion</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="weather-app__search container my-4" aria-label="búsqueda">
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Buscar ciudad" aria-label="Buscar ciudad">
+          <button class="btn btn-primary" type="button">Buscar</button>
+        </form>
+      </section>
+
+      <section id="features" class="features weather-app__results">
+        <div class="container">
+          <h2>Ciudades Principales</h2>
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+              <article class="place-card card place-card--sunny">
+                <div class="place-card__icon" aria-hidden="true">☀️</div>
+                <h3 class="place-card__name">Santiago</h3>
+                <p class="place-card__temp">26°C</p>
+                <p class="place-card__state">Soleado</p>
+                <a href="detail.html" class="btn-outline place-card__action">Ver detalle</a>
+              </article>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+              <article class="place-card card place-card--rainy">
+                <div class="place-card__icon" aria-hidden="true">🌧️</div>
+                <h3 class="place-card__name">Valparaíso</h3>
+                <p class="place-card__temp">18°C</p>
+                <p class="place-card__state">Lluvioso</p>
+                <a href="detail.html" class="btn-outline place-card__action">Ver detalle</a>
+              </article>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+              <article class="place-card card place-card--cloudy">
+                <div class="place-card__icon" aria-hidden="true">⛅</div>
+                <h3 class="place-card__name">Concepción</h3>
+                <p class="place-card__temp">20°C</p>
+                <p class="place-card__state">Parcial nublado</p>
+                <a href="detail.html" class="btn-outline place-card__action">Ver detalle</a>
+              </article>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+              <article class="place-card card place-card--cloudy">
+                <div class="place-card__icon" aria-hidden="true">⛅</div>
+                <h3 class="place-card__name">La serena</h3>
+                <p class="place-card__temp">27°C</p>
+                <p class="place-card__state">Soleado</p>
+                <a href="detail.html" class="btn-outline place-card__action">Ver detalle</a>
+              </article>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+              <article class="place-card card place-card--cloudy">
+                <div class="place-card__icon" aria-hidden="true">⛅</div>
+                <h3 class="place-card__name">Chillan</h3>
+                <p class="place-card__temp">20°C</p>
+                <p class="place-card__state">Parcial nublado</p>
+                <a href="detail.html" class="btn-outline place-card__action">Ver detalle</a>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta mt-5"> <div class="inner">
+          <h2>Ipsem Lorem</h2>
+          <p class="text-center">Ipsem Lorem</p>
+          <a class="btn mt-4" href="#signup">Ipsem Lorem</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="inner">
+        <p class="copy">© 2025 jespimu. Todos los derechos reservados.</p>
+        <div class="social">
+          <a href="#">Twitter</a>
+          <a href="#">GitHub</a>
+          <a href="#">LinkedIn</a>
+        </div>
+      </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

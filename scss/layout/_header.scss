@@ -1,0 +1,17 @@
+@use '../abstracts' as *;
+
+.header {
+  background: white;
+  border-bottom: 1px solid rgba($text, .08);
+  position: sticky; top: 0; z-index: 10;
+
+  .inner { @include container(); @include flex-center(row, $space-5); justify-content: space-between; padding-block: $space-3; }
+
+  .brand { font-weight: 700; color: $primary; letter-spacing: .2px; }
+
+  .nav { @include flex-center(row, $space-4);
+    a { color: $text; text-decoration: none; padding: $space-2 $space-3; border-radius: $radius-sm; &:hover { background: rgba($text, .06); } }
+  }
+
+  .cta { @include button-base; background: $primary; color: white; &:hover { background: darken($primary, 8%); } }
+}

@@ -1,0 +1,39 @@
+@use 'variables' as *;
+
+@mixin container($max: $container-max) {
+  max-width: $max;
+  margin-inline: auto;
+  padding-inline: $space-5;
+}
+
+@mixin fluid-type($min, $max, $minVW: 320px, $maxVW: 1280px) {
+  font-size: clamp($min, ($min * 1px) + ( ($max - $min) * (100vw - $minVW) / ($maxVW - $minVW) ), $max);
+}
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == sm { @media (min-width: $bp-sm) { @content; } }
+  @else if $breakpoint == md { @media (min-width: $bp-md) { @content; } }
+  @else if $breakpoint == lg { @media (min-width: $bp-lg) { @content; } }
+  @else if $breakpoint == xl { @media (min-width: $bp-xl) { @content; } }
+}
+
+@mixin flex-center($dir: row, $gap: $space-4) {
+  display: flex;
+  flex-direction: $dir;
+  align-items: center;
+  justify-content: center;
+  gap: $gap;
+}
+
+@mixin button-base {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: $space-3 $space-5;
+  border-radius: $radius-md;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color .2s ease, box-shadow .2s ease, transform .04s ease;
+  cursor: pointer;
+  border: none;
+}

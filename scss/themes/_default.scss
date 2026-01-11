@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Modelo de Cajas</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif; 
+            margin: 40px;
+            background-color: #fff;
+        }
+
+        
+        * {
+            box-sizing: border-box;
+        }
+
+        .caja-1 {
+            width: 40%;
+            border: 2px dotted orange;
+            color: olivedrab; 
+            text-align: right;
+            padding: 10px;
+            margin-bottom: 20px; 
+            font-size: 0.9rem;
+        }
+
+       
+        .caja-2 {
+            width: 45%;
+            border: 2px solid royalblue;
+            font-style: italic;
+            color: #333;
+            padding: 15px;
+            margin-left: auto; 
+            margin-bottom: 40px;
+            font-size: 0.9rem;
+        }
+
+        
+        .caja-3 {
+            width: 40%;
+            border: 3px solid black;
+            padding: 10px;
+            margin-bottom: 20px;
+            font-size: 0.9rem;
+        }
+
+      
+        .caja-4 {
+            width: 90%;
+            border-bottom: 3px solid hotpink; 
+            padding-bottom: 5px;
+            font-size: 0.8rem;
+            color: #444;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="caja-1">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+    </div>
+
+    <div class="caja-2">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+    </div>
+
+    <div class="caja-3">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.
+    </div>
+
+    <div class="caja-4">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.
+    </div>
+
+</body>
+</html>

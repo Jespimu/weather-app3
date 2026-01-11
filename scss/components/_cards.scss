@@ -1,0 +1,33 @@
+@use '../abstracts' as *;
+
+.card {
+  background: white;
+  border: 1px solid rgba($text, .08);
+  border-radius: $radius-lg;
+  padding: $space-5;
+  box-shadow: 0 6px 16px rgba($text, .06);
+  h3 { margin: 0 0 $space-3; }
+  p { margin: 0; }
+}
+
+.place-card {
+  background: white;
+  border: 1px solid rgba($text, .08);
+  border-radius: $radius-lg;
+  padding: $space-5;
+  box-shadow: 0 6px 16px rgba($text, .06);
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  grid-template-areas: 'icon name' 'icon temp' 'icon state' 'icon action';
+  gap: $space-3;
+
+  &__icon { grid-area: icon; font-size: 32px; line-height: 1; }
+  &__name { grid-area: name; font-weight: 600; margin: 0; }
+  &__temp { grid-area: temp; color: $secondary; }
+  &__state { grid-area: state; color: $muted; }
+  &__action { grid-area: action; margin-top: $space-3; }
+
+  &--sunny { border-color: rgba($accent, .5); }
+  &--rainy { border-color: rgba($secondary, .5); }
+  &--cloudy { border-color: rgba($text, .12); }
+}

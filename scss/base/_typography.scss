@@ -1,0 +1,5 @@
+@use '../abstracts' as *;
+
+h1 { @include fluid-type(28px, 44px); margin: $space-6 0 $space-4; letter-spacing: -.02em; }
+h2 { @include fluid-type(24px, 32px); margin: $space-5 0 $space-3; }
+p { margin: 0 0 $space-4; color: $muted; }

@@ -1,0 +1,21 @@
+@use '../abstracts' as *;
+
+.hero {
+  background: linear-gradient(180deg, rgba($primary, .06), rgba($primary, 0));
+  .inner { @include container(); padding-block: $space-8; text-align: center; @include respond(md) { text-align: left; } }
+  .actions { @include flex-center(row, $space-4); margin-top: $space-5; }
+}
+
+.features {
+  .inner { @include container(); padding-block: $space-7; }
+}
+
+.cta {
+  background: $primary;
+  color: white;
+  .inner { @include container(); padding-block: $space-7; text-align: center; }
+  .btn { background: white; color: $primary; &:hover { background: lighten(white, 6%); } }
+}
+
+.weather-app__search { @include container(); }
+.weather-app__results { }

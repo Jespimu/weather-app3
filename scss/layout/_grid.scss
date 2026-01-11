@@ -1,0 +1,7 @@
+@use '../abstracts' as *;
+
+.grid {
+  display: grid;
+  gap: $space-5;
+  @include respond(md) { grid-template-columns: repeat(3, 1fr); }
+}

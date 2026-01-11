@@ -1,0 +1,15 @@
+@use '../abstracts' as *;
+
+.btn {
+  @include button-base;
+  background: $secondary; color: white;
+  box-shadow: 0 4px 10px rgba($secondary, .25);
+  &:hover { background: darken($secondary, 6%); }
+  &:active { transform: translateY(1px); }
+}
+
+.btn-outline {
+  @include button-base;
+  background: transparent; color: $primary; border: 2px solid $primary;
+  &:hover { background: rgba($primary, .1); }
+}
